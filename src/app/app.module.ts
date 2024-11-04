@@ -6,12 +6,10 @@ import { ControleLivrosService } from './controle-livros.service';
 
 @NgModule({
     declarations: [
-      AppComponent,
-      // adicione outros componentes, se houver
+      AppComponent,git add
     ],
     imports: [
       BrowserModule,
-      // adicione outros módulos, se necessário
     ],
     providers: [
       ControleEditoraService,
