@@ -5,17 +5,16 @@ import { ControleEditoraService } from './controle-editora.service';
 import { ControleLivrosService } from './controle-livros.service';
 
 @NgModule({
-    declarations: [
-      AppComponent,git add
-    ],
-    imports: [
-      BrowserModule,
-    ],
-    providers: [
-      ControleEditoraService,
-      ControleLivrosService
-    ],
-    bootstrap: [AppComponent]
-  })
-  export class AppModule { }
-  
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+  ],
+  providers: [
+    ControleEditoraService,
+    ControleLivrosService
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
