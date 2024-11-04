@@ -12,7 +12,7 @@ import { Livro } from '../livro';
 export class LivroListaComponent implements OnInit {
   public editoras: Array<Editora> = [];
   public livros: Array<Livro> = [];
-
+  
   constructor(private servEditora: ControleEditoraService, private servLivros: ControleLivrosService) { }
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class LivroListaComponent implements OnInit {
     this.livros = this.servLivros.obterLivros();
   }
 
-  excluir = (codigo: number): void => {
+  excluir = (codigo: number) => {
     this.servLivros.excluir(codigo);
     this.livros = this.servLivros.obterLivros();
   }

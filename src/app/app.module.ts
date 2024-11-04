@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { LivroListaComponent } from './livro-lista/livro-lista.component'; // ajuste o caminho conforme necessário
-import { ControleEditoraService } from './controle-editora.service';
-import { ControleLivrosService } from './controle-livros.service';
+import { LivroListaComponent } from './livro-lista/livro-lista.component';
 
 @NgModule({
   declarations: [
@@ -11,12 +9,9 @@ import { ControleLivrosService } from './controle-livros.service';
     LivroListaComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule
   ],
-  providers: [
-    ControleEditoraService,
-    ControleLivrosService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
