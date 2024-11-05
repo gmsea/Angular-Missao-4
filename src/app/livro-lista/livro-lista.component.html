@@ -1,18 +1,19 @@
-<main class="container mt-5">
-  <h1 class="mb-4">Lista de Livros</h1>
-  <table class="table table-bordered">
+<main>
+  <h1>Lista de Livros</h1>
+  <table class="table">
     <thead>
       <tr>
-        <th>Título</th>
-        <th>Editora</th>
-        <th>Autores</th>
-        
+        <th style="background-color: black; color: white;">Título</th>
+        <th style="background-color: black; color: white;">Resumo</th>
+        <th style="background-color: black; color: white;">Editora</th>
+        <th style="background-color: black; color: white; text-align: center;">Autores</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let livro of livros">
-        <td>
+        <td class="col-3">
           {{ livro.titulo }}
+          <br>
           <button
             class="btn btn-danger btn-sm ml-2"
             (click)="excluir(livro.codigo)"
@@ -20,6 +21,7 @@
             Excluir
           </button>
         </td>
+        <td>{{ livro.resumo }}</td>
         <td>{{ obterNome(livro.codEditora) }}</td>
         <td>
           <ul>
