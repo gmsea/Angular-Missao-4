@@ -6,9 +6,9 @@ import { Livro } from './livro';
 })
 export class ControleLivrosService {
   private livros: Array<Livro> = [
-    { codigo: 1, codEditora: 1, titulo: 'Livro A', resumo: 'Resumo do Livro A', autores: ['Autor A1', 'Autor A2'] },
-    { codigo: 2, codEditora: 2, titulo: 'Livro B', resumo: 'Resumo do Livro B', autores: ['Autor B1'] },
-    { codigo: 3, codEditora: 3, titulo: 'Livro C', resumo: 'Resumo do Livro C', autores: ['Autor C1', 'Autor C2'] },
+    { codigo: 1, codEditora: 1, titulo: 'Código Limpo: Habilidades Práticas do Agile Software', resumo: 'Tenha boas práticas para escrever um código limpo e eficiente', autores: ['Robert C. Martin'] },
+    { codigo: 2, codEditora: 2, titulo: 'Você Não Sabe JS', resumo: ' Uma série que explora em profundidade o JavaScript, desde os fundamentos até tópicos avançados.', autores: ['Kyle Simpson'] },
+    { codigo: 3, codEditora: 3, titulo: 'Como Programar', resumo: 'Um guia completo para aprender Java, com exercícios e exemplos práticos.', autores: ['Paul Deitel', 'Harvey Deitel'] },
 
   ];
 
