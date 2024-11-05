@@ -6,17 +6,19 @@ import { Editora } from './editora';
 })
 export class ControleEditoraService {
   private editoras: Array<Editora> = [
-    { codEditora: 1, nome: 'Editora A' },
-    { codEditora: 2, nome: 'Editora B' },
-    { codEditora: 3, nome: 'Editora C' }
+    {codEditora: 1, nome: 'Prentice Hall'},
+    {codEditora: 2, nome: 'O Reilly Media'},
+    {codEditora: 3, nome: 'Pearson'},
   ];
-
-  getNomeEditora(codEditora: number): string {
-    const editora = this.editoras.filter(e => e.codEditora === codEditora);
-    return editora.length > 0 ? editora[0].nome : 'Editora não encontrada';
-  }
 
   getEditoras(): Array<Editora> {
     return this.editoras;
   }
+
+  getNomeEditoras(codEditora: number): string | undefined {
+    const editora = this.editoras.find(editora => editora.codEditora === codEditora);
+    return editora ? editora.nome : undefined
+  }
+
+  constructor() { }
 }
